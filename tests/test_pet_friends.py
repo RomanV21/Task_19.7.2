@@ -143,7 +143,7 @@ def test_add_pet_with_a_lot_of_words_in_variable_name(animal_type='dog', age='2'
     word_count = len(list_name)
 
     assert status == 200
-    assert word_count < 10, 'Питомец добавлен с именем больше 10 слов'
+    assert word_count > 10, 'Питомец добавлен с именем больше 10 слов'
 
 
 def test_add_pet_with_special_characters_in_variable_animal_type(name='Gosha', age='2', pet_photo='images/Gosha.jpg'):
